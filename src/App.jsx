@@ -10,6 +10,12 @@ function App() {
     <>
 
       <div className='home_desk'>
+
+        <div className='bar_task'>
+          <i className="fa-brands fa-windows icon_task"></i>
+          <i className="fa-solid fa-magnifying-glass icon_task"></i>
+        </div>
+
       </div>
 
 
