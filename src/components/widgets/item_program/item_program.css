@@ -1,0 +1,27 @@
+.item_program {
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+}
+.icon_program {
+    width: 40px;
+    height: 40px;
+}
+.name_program {
+    text-align: center;
+    font-size: 15px;
+    
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item_program:hover {
+    border: 2px solid red;
+}
