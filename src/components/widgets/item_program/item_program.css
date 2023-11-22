@@ -24,4 +24,5 @@
 }
 .item_program:hover {
     border: 2px solid red;
+    cursor: default;
 }

@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.home_desk {
-  
+.desk {
+  width: 100%;
+  height: calc(100vh - 37px);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
 }
