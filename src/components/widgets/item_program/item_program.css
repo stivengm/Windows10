@@ -23,6 +23,7 @@
     text-overflow: ellipsis;
 }
 .item_program:hover {
-    border: 2px solid red;
+    background-color: rgba(98, 149, 221, .5);
+    border: 2px solid #6295DD;
     cursor: default;
 }
