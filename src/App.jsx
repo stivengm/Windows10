@@ -20,6 +20,18 @@ function App() {
       name: "Google Chrome",
       icon1: "google-chrome-icon",
       icon2: "google-chrome-icon"
+    },
+    {
+      id: 3,
+      name: "Consola",
+      icon1: "google-chrome-icon",
+      icon2: "google-chrome-icon"
+    },
+    {
+      id: 4,
+      name: "Este equipo",
+      icon1: "google-chrome-icon",
+      icon2: "google-chrome-icon"
     }
   ]
 
