@@ -1,0 +1,29 @@
+.bar_task {
+    width: 100vw;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#243A43, #1A2741);
+    color: #FFFFFF;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons_left {
+    display: flex;
+}
+.icon_task {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+  
+.icon_task:hover {
+    /* background-color: #04AA6D; */
+    /* opacity: .5; */
+}
