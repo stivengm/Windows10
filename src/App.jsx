@@ -6,14 +6,40 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const [date, setDate] = useState(new Date);
+
+
+  function setIntervalHour() {
+    setInterval(() => {
+      var dates = new Date();
+      setDate(dates)
+    }, 1000);
+  }
+
+  setIntervalHour();
+
+
+  // function setIntervalHour() {
+  //   setInterval(() => {
+  //     date = new Date()
+  //   }, 1000);
+  // }
+
+  
+
   return (
     <>
 
       <div className='home_desk'>
 
         <div className='bar_task'>
-          <i className="fa-brands fa-windows icon_task"></i>
-          <i className="fa-solid fa-magnifying-glass icon_task"></i>
+          <div className='icons_left'>
+            <i className="fa-brands fa-windows icon_task"></i>
+            <i className="fa-solid fa-magnifying-glass icon_task"></i>
+          </div>
+          <div className='info_right'>
+            <span className='date'>{date.getHours()}:{date.getMinutes() <= 9 ? '0' + date.getMinutes() : date.getMinutes()}:{date.getSeconds() <= 9 ? '0' + date.getSeconds() : date.getSeconds()}</span>
+          </div>
         </div>
 
       </div>

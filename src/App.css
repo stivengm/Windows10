@@ -17,6 +17,10 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.icons_left {
+  display: flex;
 }
 .icon_task {
   width: 36px;
@@ -29,7 +33,9 @@
 }
 
 .icon_task:hover {
-  background-color: #04AA6D;
+  /* background-color: #04AA6D; */
+  /* opacity: .5; */
+  
 }
 
 
