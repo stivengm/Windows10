@@ -1,11 +1,12 @@
 import './item_program.css';
-import GoogleChromeIcon from '../../../assets/icons/GoogleChrome_icon.dart.png';
+import GoogleChromeIcon from '../../../assets/icons/google-chrome-icon.png';
 
-export function ItemProgram() {
+export function ItemProgram({ infoProgram }) {
+
     return (
         <div className="item_program">
-            <img src={GoogleChromeIcon} alt="" className='icon_program' />
-            <span className='name_program'>Google Chrome</span>
+            <img src={'/src/assets/icons/' + infoProgram.icon1 + '.png'} alt="" className='icon_program' />
+            <span className='name_program'>{infoProgram.name}</span>
         </div>
     );
 }

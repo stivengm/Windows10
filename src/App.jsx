@@ -10,14 +10,16 @@ function App() {
 
   var programs = [
     {
+      id: 1,
       name: "Papelera de Reciclaje",
-      icon1: "",
-      icon2: ""
+      icon1: "recycle-bin-icon",
+      icon2: "recycle-bin-icon-2"
     },
     {
+      id: 2,
       name: "Google Chrome",
-      icon1: "",
-      icon2: ""
+      icon1: "google-chrome-icon",
+      icon2: "google-chrome-icon"
     }
   ]
 
@@ -27,9 +29,7 @@ function App() {
       <div className='home_desk'>
         <div className='desk'>
           {
-            programs.map(function(item, i) {
-              return <ItemProgram />;
-            })
+            programs.map(item => <ItemProgram infoProgram={item} key={item.id} />)
           }
         </div>
         <TaskBar />
