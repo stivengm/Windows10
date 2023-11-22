@@ -8,12 +8,29 @@ import './App.css'
 function App() {
   // const [count, setCount] = useState(0)
 
+  var programs = [
+    {
+      name: "Papelera de Reciclaje",
+      icon1: "",
+      icon2: ""
+    },
+    {
+      name: "Google Chrome",
+      icon1: "",
+      icon2: ""
+    }
+  ]
+
   return (
     <>
 
       <div className='home_desk'>
         <div className='desk'>
-          <ItemProgram />
+          {
+            programs.map(function(item, i) {
+              return <ItemProgram />;
+            })
+          }
         </div>
         <TaskBar />
       </div>
